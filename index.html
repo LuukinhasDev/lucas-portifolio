@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lucas Mendes | Desenvolvedor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Lucas Mendes</h1>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao" class="bg-dark">
+            <div class="container">
+                <h2 class="reveal-delay-1">Olá eu sou Lucas Mendes</h2>
+                <p class="reveal-delay-2">Sou estudante de Ciência da Computação iniciando na área de tecnologia. Tenho
+                    paixão por desenvolvimento web e estou construindo projetos que mostrem o que posso fazer. Este site
+                    é o primeiro passo do meu portfólio.</p>
+                <div class="botoes-apresentacao">
+                    <a href="#contato">Vamos trabalhar juntos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="bg-darker">
+            <div class="container">
+                <h2 class="reveal-delay-1">Sobre mim</h2>
+                <p class="reveal-delay-2">Atualmente curso o último semestre de Ciência da Computação e estou focado em
+                    iniciar minha carreira na área de TI. Tenho estudado por conta própria desenvolvimento web,
+                    ferramentas low-code e análise de dados. Estou comprometido a aprender, crescer e contribuir em
+                    projetos reais, enquanto busco minha primeira oportunidade como estagiário ou freelancer.</p>
+            </div>
+        </section>
+
+        <section id="servicos" class="bg-dark">
+            <div class="container duas-colunas">
+                <div class="texto">
+                    <h2 class="reveal-delay-1">O que posso fazer</h2>
+                    <ul class="reveal-delay-2">
+                        <li>Criação de sites simples utilizando HTML, CSS e JavaScript</li>
+                        <li>Atualizações de conteúdo em páginas web</li>
+                        <li>Organização de arquivos e automatizações básicas com Power Automate</li>
+                        <li>Criação de dashboards com Power BI</li>
+                    </ul>
+                </div>
+                <div class="icone reveal-delay-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Ícone de Web Dev"
+                        width="120">
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencias" class="bg-darker">
+            <div class="container">
+                <h2 class="reveal-delay-1">Experiências</h2>
+                <div class="grade-experiencias reveal-delay-2">
+                    <div class="card">
+                        <h3>Projeto Pessoal</h3>
+                        <p>Criação do meu primeiro site do zero, usando HTML e CSS.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Estudos com Alura</h3>
+                        <p>Participei de cursos de front-end, lógica e Git/GitHub.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Fundação Bradesco</h3>
+                        <p>Curso básico de Python e introdução à programação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <div class="formulario">
+                <h2>Entre em contato</h2>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu Nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+                <div class="imagem-contato"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-darker">
+        <div class="container">
+            <p>Desenvolvido por Lucas Mendes</p>
+            <div class="social-icons">
+                <h2>Conecte-se comigo</h2>
+                <a href="https://github.com/LuukinhasDev" target="_blank">
+                    GitHub
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-antonio-goncalves-mendes/" target="_blank">
+                    LinkedIn
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('section h2', {
+        distance: '20px',
+        duration: 600,
+        easing: 'ease-out',
+        origin: 'left',
+        delay: 100
+        });
+
+        ScrollReveal().reveal('section p, section li, .botoes-apresentacao a, form input, form textarea, form button', {
+        distance: '40px',
+        duration: 800,
+        easing: 'ease-out',
+        origin: 'bottom',
+        interval: 100
+        });
+    </script>
+
+</body>
+
+</html>
